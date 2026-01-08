@@ -14,5 +14,7 @@ The column 'mass' is the mass of tissue used in the CS assay in mg. This data is
 
 Finally, the column 'CS_activity' refers to the CS activity measured using the protocol outlined in (Moyes et al., 1997). The values are in umol citrate/min/mg protein.
 
+Note: The CS activity measures are in triplicates, so there are three separate values for the same genotype in the each acclimation group at each test temperature.
+
 ## References:
 Moyes CD, Mathieu-Costello OA, Tsuchiya N, Filburn C & Hansford RG (1997). Mitochondrial biogenesis during cellular differentiation. Am J Physiol-Cell Physiol 272, C1345–C1351.
