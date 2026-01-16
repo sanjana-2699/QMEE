@@ -34,7 +34,7 @@ df_CS <- (masterdoc
           |> subset(var_name == "CS")
 )
 
-#check if there are values other than "CS" in var_name (this column was only kept for checking this)
+#check if there are values other than "CS" in var_name
 print(unique(df_CS$var_name))
 
 #CS measures are in triplicates -> get average values for each genotype at each test condition instead
@@ -51,7 +51,7 @@ masterdoc_final <- (masterdoc
   |> rbind(df_CS_avg)
 )
 
-#plot to check that things worked
+#plot to check that things worked:
 #RMR and CS should have equal counts (because of two test temperatures per treatment group)
 #PCC and TBARS should have equal counts (only one test temperature per treatment group)
 ggplot(data = masterdoc_final, aes(x = var_name)) +
@@ -64,4 +64,5 @@ ggplot(data = masterdoc_final, aes(x = var_name)) +
 #check structure of variables
 str(masterdoc_final)
 
+#save as .rds file
 saveRDS(masterdoc_final, file = "masterdoc_final.rds")
