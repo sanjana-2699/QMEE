@@ -15,7 +15,7 @@ masterdoc <- read.csv("TxS_masterfile.csv")
 #check structure of variables
 str(masterdoc)
 
-#adjust certain variables to factors 
+#change datatypes of certain variables to factors 
 masterdoc[,c("AT", "AS", "TT", "day", "plate", "genotype")] <- lapply(masterdoc[,c("AT", "AS", "TT", "day", "plate", "genotype")], 
                                                           as.factor)
 #check that it worked
@@ -42,7 +42,7 @@ print(unique(df_CS$var_name))
 df_CS_avg <- (df_CS
   |> summarise(across(c(BSA, mass, var_measure),
                       mean),
-               .by = c(AT,AS,TT,genotype,day,plate,var_name))
+               .by = c(AT, AS, TT, genotype, day, plate, var_name, unit))
 )
 
 #helpful if i got rid of the above averaging step and compiled final results back in the masterfile
