@@ -10,7 +10,9 @@ In contrast, at lower temperatures, I predict there will be reduced rates of oxi
 This study is exploratory and is meant to understand/establish stress response mechanisms in this study system. Using these measures, I want to understand how each of these variables are modified in response to either or both of these stressors. 
 
 ## Data description: 
-From class, I've learned that it is better practice to have a document for a project and use this for analysis and just general data storage. The updated datafile, "TxS_masterfile.csv" contains all the data that has been collected so far. This file includes columns on the acclimation and test conditions for each data point - acclimation temperature ('AT') in degrees Celcius, acclimation salinity ('AS'), in parts per thousand (ppt), and test temperature ('TT') in degrees Celcius. 
+The updated datafile, "TxS_masterfile.csv" contains all the data that has been collected so far in this project (this seems to be better practice). 
+
+This file includes columns on the acclimation and test conditions for each data point - acclimation temperature ('AT') in degrees Celcius, acclimation salinity ('AS'), in parts per thousand (ppt), and test temperature ('TT') in degrees Celcius. 
 
 The column 'genotype' serves as an ID for which genotype the data point was collected from.
 
