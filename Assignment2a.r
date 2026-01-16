@@ -1,9 +1,5 @@
 library(tidyverse)
 library(ggthemes)
-library(glmmTMB)
-library(performance)
-library(emmeans)
-library(car)
 theme_set(theme_linedraw() %+replace%
             theme(panel.grid.major = element_blank(), 
                   panel.grid.minor = element_blank(),
