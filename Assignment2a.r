@@ -42,7 +42,7 @@ print(unique(df_CS$var_name))
 df_CS_avg <- (df_CS
   |> summarise(across(c(BSA, mass, var_measure),
                       mean),
-               .by = c(AT, AS, TT, genotype, day, plate, var_name, unit))
+               .by = c(AT, AS, TT, genotype, day, plate, var_name, units))
 )
 
 #helpful if i got rid of the above averaging step and compiled final results back in the masterfile
