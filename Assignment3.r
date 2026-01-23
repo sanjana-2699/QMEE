@@ -131,7 +131,3 @@ plot_CS_RMR_slope <- ggplot(data = df_CS_RMR_slopes, aes(x = treatment_groups, y
         y = "slope of RMR ~ CS") 
 
 print (plot_CS_RMR_slope) 
-
-
-
-
