@@ -18,7 +18,6 @@ The column 'genotype' serves as an ID for which genotype the data point was coll
 
 The column 'BSA' refers to the protein content in the sample used, expressed in mg/mL. Protein content was estimated using the Bradford Assay. The final enzyme activities are standardised using the protein content.
 
-The column 'mass' is the mass of tissue used in each assay in mg.
 
 The column 'var_name' refers to the name of the variable measured. This can be RMR, CS, PCC, or TBARS (so far). 
 
