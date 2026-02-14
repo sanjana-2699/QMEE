@@ -61,3 +61,8 @@ em_plot_RMR <- ggplot(data = em_df_RMR, aes(x = TT, y = emmean, group = AT, colo
 
 print (em_plot_RMR)
 
+## I expected metabolic rate to be higher in the warm acclimated anemones. This was not the case at the high salinity treatments, anemones may have been stressed - I need to look at other variables of interest to corroborate this idea.
+## There is unexpectedly high metabolic rate in the warm acclimated anemones in low salinity at the warm test temperature. I'm not yet sure how to explain this biologically, but it was cool to see an interesting, interactive effect of the warm temperature-low salinity acclimation.
+## We did expect a higher metabolic rate at the low salinity - the cost of osmoregulation is generally lower. A major osmoregulatory enzyme, NKA, is very energy-demanding, so this result was interesting. I do plan to assay NKA activity shortly.
+## The effects of test temperatures seem expected, nothing particularly interesting going on there - it is nice to see that it's easier to explain though.
+## The changes in metabolic rate as a result of test temperatures does indicate that anemones from all four acclimation groups remain sensitive to temperature.
