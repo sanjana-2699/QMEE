@@ -14,7 +14,7 @@ theme_set(theme_linedraw() %+replace%
 
 options(contrasts = c("contr.sum", "contr.poly"), digits = 3)
 
-df1 <- readRDS("masterdoc_final.rds")
+df1 <- readRDS("masterdoc_final.rds") #output from assignment2a.r
 
 df_RMR <- (df1
            |> subset(var_name == "RMR")
@@ -23,6 +23,7 @@ df_RMR <- (df1
 df_RMR[,c(1:4)]<- lapply(df_RMR[,c(1:4)], as.factor)
 
 ##Hypothesis: In response to thermal and saline stress (both individual and interactive effects), metabolic compensation is seen in N. vectensis as an acclimation response.
+##More information on experimental design is available in the README
 ##All possible terms in the below model are inluded because of known effects of temperature and salinity alone on metabolic rate - we are hoping to see interesting trends in these effects
 
 mod_RMR <- glmmTMB(log(var_measure) ~ ((AT + AS + TT)^3) + log(mass) + (1|genotype), data = df_RMR)
