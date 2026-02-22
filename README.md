@@ -28,3 +28,7 @@ The column 'units' refers to the units of the variable measured.
 Finally, the columns 'day' and 'plate' are variables specific to the RMR measures. As the names suggest, these variables refer to the day that the experiment was run on and the plate ID of the microplate used.
 
 Note: The CS activity measures are in triplicates, so there are three separate values for the same genotype in each acclimation group at each test temperature.
+
+## Assignment 4
+
+JD: I agree that hybrid approaches are fraught with danger. I would also be concerned about the whole idea of “checking for normality” since the true process is not normal. Were they thoughtful about how close to normal things needed to be? Or did they naively use a P value screen (which is an example of accepting the null)? You point out their pairwise comparisons but could have done so more sharply: it's up to them to say why they're doing all comparisons (and what the plan was). Judgment calls are always a problem: did the study use observers who were blinded to the treatment? I kind of liked the “only detected” line. It could be fine your way as well, but to me the main point was the use of “detected” which seems less likely to imply the idea that it was actually absent when not detected. Grade: 2/3
