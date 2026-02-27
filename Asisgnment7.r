@@ -2,8 +2,6 @@ library(tidyverse)
 library(ggthemes)
 library(glmmTMB)
 library(performance)
-library(emmeans)
-library(car)
 theme_set(theme_linedraw() %+replace%
             theme(text = element_text(face = "bold"),
                   legend.background = element_rect(linewidth = 0.5, colour = "black"),
@@ -23,7 +21,7 @@ df_RMR <- (df1
 
 mod_RMR <- glm(var_measure ~ log(mass)
                , family = gaussian (link = log)
-               ,data = df_RMR)
+               , data = df_RMR)
 
 summary(mod_RMR)
 
@@ -33,7 +31,7 @@ check_model(mod_RMR)
 mod_plot <- ggplot(data = df_RMR, aes(x = mass, y = var_measure)) +
   geom_point() +
   geom_smooth(method="glm",
-                      formula=y~log(x),
-                      method.args=list(family=gaussian(link = log))) +
+                      formula = y ~ log(x),
+                      method.args = list(family = gaussian(link = log))) +
   labs(x = "mass (mg)",
        y = "Routine Metabolic Rate (umol/h)")
