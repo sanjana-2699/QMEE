@@ -33,5 +33,8 @@ mod_plot <- ggplot(data = df_RMR, aes(x = mass, y = var_measure)) +
   geom_smooth(method="glm",
                       formula = y ~ log(x),
                       method.args = list(family = gaussian(link = log))) +
-  labs(x = "mass (mg)",
-       y = "Routine Metabolic Rate (umol/h)")
+  labs(x = "log mass (mg)",
+       y = "log Routine Metabolic Rate (umol/h)")
+
+mod_plot
+#shows a weak relationship between RMR and mass for this data? that seems weird. the effects on RMR are likely stronger from other experimental factors, this is an incomplete set of predictors
