@@ -1,0 +1,4 @@
+*.Rout
+Rplots.pdf
+*~
+*.rds
